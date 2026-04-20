@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    animation: slideDown 0.8s ease;
+}
+
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: url("background.avif") center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero h1 {
+    font-size: 50px;
+    animation: zoomIn 1.2s ease;
+}
+
+.hero p {
+    animation: fadeIn 2s ease;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #ff4d4d;
+    color: white;
+    margin-top: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ff1a1a;
+}
+
+/* Menu */
+.menu {
+    padding: 80px 20px;
+    text-align: center;
+    background-image: url("premium_photo-1668146927669-f2edf6e86f6f.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Animate cards on load */
+.card {
+    transition: 0.4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 30px;
+    right: -60px;
+    /* hidden initially */
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: right 0.4s ease;
+}
+
+/* when visible */
+#scrollBtn.show {
+    right: 30px;
+}
+
+/* Hover animation */
+.card:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* About + Contact */
+.about,
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+
+}
+
+.us {
+    font-size: 50px;
+
+}
+
+.about {
+    background-image: url("istockphoto-882813050-1024x1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* font-size: large; */
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+/* Input */
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+
+.contact {
+    background-image: url("background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

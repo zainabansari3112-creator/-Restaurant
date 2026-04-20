@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Restaurant</title>
+
+    <!-- Bootstrap CSS (FIXED POSITION) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Seoul Bites</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <h1>Authentic Korean Cuisine</h1>
+        <p>Fresh • Spicy • Delicious</p>
+        <button onclick="scrollToMenu()">View Menu</button>
+    </section>
+
+    <section id="menu" class="menu">
+        <h1 class="newone">Menu</h1>
+
+        <div class="container">
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="photo-1693429308125-3be7b105ad56.avif" class="card-img-top" alt="Bibimbap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bibimbap</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="photo-1638866281450-3933540af86a.avif" class="card-img-top" alt="Ramen">
+                        <div class="card-body">
+                            <h5 class="card-title">Korean Ramen</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="istockphoto-985708202-612x612.webp" class="card-img-top" alt="BBQ">
+                        <div class="card-body">
+                            <h5 class="card-title">Korean BBQ</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="hotpot.avif" class="card-img-top" alt="Hotpot">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotpot</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="tebokkie.avif" class="card-img-top" alt="Tteokbokki">
+                        <div class="card-body">
+                            <h5 class="card-title">Tteokbokki</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="gimbab.avif" class="card-img-top" alt="Gimbap">
+                        <div class="card-body">
+                            <h5 class="card-title">Gimbap</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="kimchi new.avif" class="card-img-top" alt="Kimchi">
+                        <div class="card-body">
+                            <h5 class="card-title">Kimchi</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Scroll Button -->
+    <button id="scrollBtn">↑</button>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h1 class="us">About Us</h1>
+        <p>Welcome! I am passionate about bringing the rich flavors of Korean cuisine to life. My journey began with a
+            deep <br>
+            appreciation for traditional Korean cooking, inspired by its balance of taste, nutrition, and culture. From
+            classic
+            dishes like kimchi and bibimbap to modern interpretations, I strive to offer an authentic and memorable
+            dining
+            experience.<br>
+
+            Every dish is prepared with care, using fresh ingredients and time-honored techniques. My goal is not just
+            to serve
+            food, but to share a piece of Korean culture and hospitality with every guest. <br>
+            We focus on quality ingredients, precise techniques, and elegant presentation to create a truly memorable
+            experience.
+            Our aim is to offer more than just a meal—it’s a journey through the richness of Korean cuisine.<br>
+
+            Thank you for being a part of this journey.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h1>Reservation</h1>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="Table No" placeholder="Table NO">
+        <button>Book Table</button>
+    </section>
+
+    <footer>
+        <p>© 2026 Seoul Bites</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
